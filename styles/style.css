@@ -31,6 +31,11 @@
     font-weight: 700;
 }
 
+.btn:hover {
+    background: #ff9b29;
+    transition: background .3s ease;
+}
+
 
 /* WEBSITE LAYOUT DESIGNING STYLING */
 
@@ -63,6 +68,11 @@ header nav {
     color: var(--deep-gray-color);
     font-size: 16px;
     font-weight: 600;
+    transition: color .5s ease;
+}
+
+.navlinks-item ul li a:hover {
+    color: var(--gray-color);
 }
 
 
@@ -200,6 +210,12 @@ header nav {
     border-radius: 7px;
     box-sizing: border-box;
     box-shadow: 2px 10px 21px rgb(245, 244, 244);
+    transition: background .3s ease;
+}
+
+.box:hover {
+    background: rgba(143, 143, 143, 0.1);
+    cursor: pointer;
 }
 
 .box h5 {
@@ -258,6 +274,13 @@ header nav {
     padding: 45px;
     text-align: center;
     border-radius: 10px;
+    transition: padding .3s ease;
+    cursor: pointer;
+}
+
+.facts-details-box:hover {
+    background: #ffeedb;
+    transition: background .3s ease;
 }
 
 .facts-details-box h4 {
