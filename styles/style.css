@@ -1,13 +1,17 @@
 :root {
     --primary-color: #FF900E;
+    --gray-color: #727272;
+    --deep-gray-color: #424242;
     --standard-color: #fff;
+    --black-standard-color: #fff;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Work Sans', sans-serif;
     list-style: none;
 }
 
@@ -24,8 +28,11 @@
     border: none;
     border-radius: 7px;
     color: var(--standard-color);
-    font-weight: bold;
+    font-weight: 700;
 }
+
+
+/* WEBSITE LAYOUT DESIGNING STYLING */
 
 header {
     width: 100%;
@@ -37,30 +44,33 @@ header nav {
     justify-content: space-between;
     align-items: center;
     background: transparent;
-    padding: 20px 228px;
+    padding: 30px 228px;
 }
 
 .branding h3 {
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
 }
 
-.navlinks-item ul li {
-    display: inline-block;
-    padding-right: 80px;
+.navlinks-item ul {
+    display: flex;
+    gap: 74px;
 }
 
 .navlinks-item ul li a {
     text-decoration: none;
-    color: #000;
+    color: var(--deep-gray-color);
     font-size: 16px;
+    font-weight: 600;
 }
 
 
 /* HEADER BANNER AND DESCRIPTION SECTION STYLING HERE  */
 
 .header-hero {
-    padding-top: 70px;
+    padding-top: 100px;
+    padding-bottom: 35px;
 }
 
 .header-text-box {
@@ -79,6 +89,7 @@ header nav {
     font-size: 16px;
     text-align: center;
     line-height: 26px;
+    color: var(--gray-color);
 }
 
 .header-text-box img {
@@ -115,7 +126,7 @@ header nav {
 
 .feature-text-box h3 {
     font-size: 45px;
-    color: #727272;
+    color: var(--gray-color);
 }
 
 .feature-text-box span {
@@ -134,6 +145,7 @@ header nav {
 .feature-text-box p {
     font-size: 16px;
     line-height: 26px;
+    color: var(--gray-color);
 }
 
 
@@ -151,8 +163,8 @@ header nav {
 }
 
 .container-text-box hr {
-    width: 10px;
-    height: 95px;
+    width: 8px;
+    height: 115px;
     background: #FF900E;
     border: none;
     position: relative;
@@ -162,6 +174,7 @@ header nav {
 .container-text-box p {
     font-size: 16px;
     line-height: 26px;
+    color: var(--gray-color);
 }
 
 .feature-detail-peragraph {
@@ -186,11 +199,13 @@ header nav {
     padding: 10px;
     border-radius: 7px;
     box-sizing: border-box;
-    box-shadow: 2px 10px 21px rgb(151, 151, 151);
+    box-shadow: 2px 10px 21px rgb(245, 244, 244);
 }
 
 .box h5 {
     font-size: 20px;
+    font-weight: 600;
+    color: #131313;
 }
 
 .feature-ex-box {
@@ -209,3 +224,108 @@ header nav {
 .feature-ex-box h2 {
     font-size: 65px;
 }
+
+
+/* FACTS DETAILS SECTION STYLING HERE */
+
+.facts-details {
+    width: 100%;
+    padding: 50px 228px;
+}
+
+.facts-details-text-box {
+    padding-bottom: 75px;
+}
+
+.facts-details-text-box h3 {
+    font-size: 45px;
+}
+
+.facts-details-text-box p {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--gray-color);
+    padding-top: 10px;
+}
+
+.facts-details-content-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-details-box {
+    border: 2px solid #FF900E;
+    padding: 45px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.facts-details-box h4 {
+    font-size: 45px;
+    color: #424242;
+}
+
+.facts-details-box p {
+    font-size: 20px;
+    color: #727272;
+}
+
+
+/* SPONSPORS DETAILS SECTION STYLING HERE */
+
+.sponspor-section {
+    padding: 150px 228px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.sponspor-text-box {
+    text-align: center;
+}
+
+.sponspor-text-box h2 {
+    font-size: 45px;
+}
+
+.sponspor-text-box p {
+    line-height: 26px;
+    color: var(--gray-color);
+    padding-top: 24px;
+}
+
+.sponspor-image-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* FOOTER PART STYLING HERE  */
+
+.footer {
+    text-align: center;
+    padding: 0 228px;
+    padding-bottom: 216px;
+}
+
+.footer-box {
+    width: 1440px;
+    background: #FFF4E7;
+    padding: 40px 0;
+    border-radius: 10px;
+    color: #424242;
+    font-size: 20px;
+}
+
+
+/* MEDIA QUERIES STYLING HERE  */
+
+
+/* THIS IS TABLET SCREEN SIZE RESPONSIVE CSS STYLING HERE  */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+
+/* THIS IS SMARTPHONE SCREEN SIZE RESPONSIVE CSS STYLING HERE  */
+
+@media screen and (max-width: 767px) {}
